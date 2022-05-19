@@ -1,0 +1,27 @@
+{
+    "name": "OGame UI Mobile Improvements",
+    "short_name": "UI Mobile Improvements",
+    "version": "1.0",
+    "description": "UI Mobile Improvements is a tool that make some touch events for mobile viewport",
+    "homepage_url": "https://universeview.be",
+    "manifest_version": 2,
+    "background": {
+        "page": "background.html"
+    },
+    "content_scripts": [
+        {
+            "js": ["assets/jquery.js", "assets/script.js"],
+            "css": ["assets/custom.css"],
+            "matches": [ "*://*.ogame.gameforge.com/game/*" ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "storage",
+        "*://*.ogame.gameforge.com/game/index.php*"
+    ],
+    "web_accessible_resources" : [
+        "assets/script.js",
+        "assets/custom.css"
+    ]
+}

@@ -1,0 +1,698 @@
+.resources-commander-container {
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    background: url("https://gf3.geo.gfsrv.net/cdnb4/73c7bd7d3a2b1bbc594927af57b354.png");
+    background-position: 0px 0px;
+    background-size: 87px;
+}
+.resources-container {
+    width: 340px !important;
+    left: 70px !important;
+    position: absolute;
+    height: 50px;
+    right: auto !important;
+    transform: scale(1.4);
+}
+.resources-container > #resourcesbarcomponent {
+    left: 0 !important;
+    top: 15px !important;
+}
+.commander-container#officers {
+    width: 420px !important;
+    height: 50px !important;
+    position: absolute !important;
+    left: unset !important;
+    right: 5px !important;
+    padding: 15px 0 !important;
+    /*transform: translate(-50%) !important;*/
+}
+.commander-container#officers > a {
+    width: 61px !important;
+    height: 61px !important;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    background-size: 425px !important;
+}
+.commander-container#officers > a > img {
+    width: 60px !important;
+    height: 60px !important;
+    aspect-ratio: auto 60 / 60 !important;
+}
+
+/*disabled officers*/
+.commander-container#officers > a.commander {
+    background-position: 338px 3px;
+}
+.commander-container#officers > a.admiral {
+    background-position: 3px 3px;
+}
+.commander-container#officers > a.engineer {
+    background-position: -175px 3px;
+}
+.commander-container#officers > a.geologist {
+    background-position: -264px 3px;
+}
+.commander-container#officers > a.technocrat {
+    background-position: -353px 3px;
+}
+/*disabled officers*/
+
+/*enabled officers*/
+.commander-container#officers > a.commander.on {
+    background-position: 338px 73px;
+}
+.commander-container#officers > a.admiral.on {
+    background-position: 3px 73px;
+}
+.commander-container#officers > a.engineer.on {
+    background-position: -175px 73px;
+}
+.commander-container#officers > a.geologist.on {
+    background-position: -264px 73px;
+}
+.commander-container#officers > a.technocrat.on {
+    background-position: -353px 73px;
+}
+/*enabled officers*/
+
+.commander-container#officers > a.characterclass-custom {
+    width: 55px !important;
+    height: 55px !important;
+    background: unset !important;
+    background-color: black !important;
+    border: 1px solid #55626d !important;
+    border-radius: 8px;
+}
+.characterclass-custom >.sprite.characterclass {
+    width: 55px !important;
+    height: 55px !important;
+}
+
+#detailWrapperhtml, body { width: 100%; }
+
+/*nickname / hour*/
+#headerbarcomponent #bar {
+    left: 0 !important;
+    top: 56px !important;
+    font-size: 10px !important;
+    text-align: left !important;
+}
+/*nickname / hour*/
+
+/*events*/
+#eventboxContent { width: 100% !important; }
+#eventboxContent #eventContent,
+#eventboxContent #eventHeader,
+#eventboxContent #eventFooter {
+    background-size: 100%;
+}
+table#eventContent .missionFleet > span,
+table#eventContent .coordsOrigin > a,
+table#eventContent .destCoords > a { width: 96% !important; }
+table#eventContent .detailsFleet > span { width: 85% !important; }
+/*events*/
+.bg-filter-menu {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    transition: .2s;
+}
+.bg-filter-menu.opened {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+#left, #leftMenu {
+    border: 1px solid black;
+    background-color: #151f29;
+    padding: 0 5px;
+    position: absolute;
+    left: -1000px;
+    transition: .2s;
+}
+#right,
+#right #myPlanets,
+#messages #planetbarcomponent,
+#chat #planetbarcomponent,
+#premium #planetbarcomponent,
+#shop #planetbarcomponent {
+    border: 1px solid black;
+    background-color: #151f29;
+    padding: 0 5px;
+    position: absolute;
+    right: -1000px;
+    transition: .2s;
+}
+
+#left.swiped,
+#leftMenu.swiped {
+    left: 0;
+    z-index: 20;
+}
+#messages #planetbarcomponent.swiped,
+#chat #planetbarcomponent.swiped,
+#shop #planetbarcomponent.swiped,
+#premium #planetbarcomponent.swiped,
+#pageContent #right.swiped {
+    width: 147px;
+    right: 130px;
+    z-index: 20;
+}
+#right.swiped div#bannerSkyscrapercomponent {
+    margin-left: 157px !important;
+}
+#right.swiped div#bannerSkyscrapercomponent #banner_skyscraper a.tooltipLeft {
+    top: -42px;
+    position: absolute;
+}
+
+/*Moon size*/
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet a.moonlink,
+#messages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.moonlink,
+#chat #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.moonlink,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.moonlink,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.moonlink {
+    height: 30px;
+    top: 30px;
+    left: 15px;
+}
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet a.moonlink > img,
+#mesages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.moonlink > img,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.moonlink > img,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.moonlink > img {
+    width: 30px;
+    height: 30px;
+    aspect-ratio: auto 30 / 30;
+}
+
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet a.constructionIcon.moon,
+#messages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon,
+#chat #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon {
+    top: 45%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet a.constructionIcon.moon > span,
+#messages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon > span,
+#chat #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon > span,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon > span,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon.moon > span {
+    transform: scale(1.5) !important;
+}
+/*Moon size*/
+
+/*Planet size*/
+#right.swiped #planetbarcomponent #rechts #cutty a.planetlink .planetPic,
+#right.swiped #planetbarcomponent #rechts #cutty a.planetlink .planet-name,
+#right.swiped #planetbarcomponent #rechts #cutty a.planetlink .planet-koords,
+#messages #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic,
+#chat #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic,
+#messages #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-name,
+#chat #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-name,
+#messages #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-koords,
+#chat #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-koords,
+#premium #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic,
+#premium #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-name,
+#premium #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-koords,
+#shop #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic,
+#shop #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-name,
+#shop #planetbarcomponent.swiped #rechts #cutty a.planetlink .planet-koords {
+    font-size: 16px !important;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon),
+#messages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon),
+#chat #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon),
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon),
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon) {
+    top: 45%;
+    left: 70%;
+    transform: translateX(-50%);
+}
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet a.constructionIcon.moon,
+#messages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon,
+#chat #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon {
+    left: 35%;
+    transform: translateX(-50%);
+}
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon) > span,
+#messages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon) > span,
+#chat #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon) > span,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon) > span,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet a.constructionIcon:not(.moon) > span {
+    transform: scale(1.5) !important;
+}
+#right.swiped #planetbarcomponent #rechts #myPlanets #countColonies,
+#messages #planetbarcomponent.swiped #rechts #myPlanets #countColonies,
+#chat #planetbarcomponent.swiped #rechts #myPlanets #countColonies,
+#premium #planetbarcomponent.swiped #rechts #myPlanets #countColonies,
+#shop #planetbarcomponent.swiped #rechts #myPlanets #countColonies {
+    width: 100%;
+    font-size: 16px;
+}
+#right.swiped #planetbarcomponent #rechts #cutty a.planetlink .planetPic,
+#messages #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic,
+#chat #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic,
+#premium #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic,
+#shop #planetbarcomponent.swiped #rechts #cutty a.planetlink .planetPic {
+    width: 65px !important;
+    height: 65px !important;
+    aspect-ratio: autop 65 / 65 !important;
+    border-radius: 100% !important;
+}
+#right.swiped #planetbarcomponent #rechts #myPlanets .smallplanet,
+#messages #planetbarcomponent.swiped #rechts #myPlanets .smallplanet,
+#chat #planetbarcomponent.swiped #rechts #myPlanets .smallplanet,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .smallplanet,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .smallplanet {
+    height: 130px !important;
+}
+#right.swiped #planetbarcomponent #rechts #myPlanets .planet-name,
+#messages #planetbarcomponent.swiped #rechts #myPlanets .planet-name,
+#chat #planetbarcomponent.swiped #rechts #myPlanets .planet-name,
+#premium #planetbarcomponent.swiped #rechts #myPlanets .planet-name,
+#shop #planetbarcomponent.swiped #rechts #myPlanets .planet-name {
+    top: 80px !important;
+}
+#right.swiped #planetbarcomponent #rechts .planet-koords,
+#messages #planetbarcomponent.swiped #rechts .planet-koords,
+#chat #planetbarcomponent.swiped #rechts .planet-koords,
+#premium #planetbarcomponent.swiped #rechts .planet-koords,
+#shop #planetbarcomponent.swiped #rechts .planet-koords {
+    top: 95px !important;
+}
+
+#right #myPlanets {
+    position: relative;
+    right: 0;
+}
+#right {
+    background-color: unset !important;
+    border: unset !important;
+}
+
+#messages #planetbarcomponent.swiped,
+#chat #planetbarcomponent.swiped,
+#premium #planetbarcomponent.swiped,
+#pageContent #right #planetbarcomponent.swiped,
+#shop #planetbarcomponent.swiped {
+    right: 103px;
+    z-index: 20;
+}
+/*Planet size*/
+
+/*When game does not loads any ad*/
+#messages #planetbarcomponent.swiped.swiped-nogamead,
+#chat #planetbarcomponent.swiped.swiped-nogamead,
+#premium #planetbarcomponent.swiped.swiped-nogamead,
+#pageContent #right #planetbarcomponent.swiped.swiped-nogamead,
+#shop #planetbarcomponent.swiped.swiped-nogamead,
+#pageContent #right.swiped {
+    right: 6px !important;
+}
+/*When game not loads any ad*/
+
+#left #links,
+#leftMenu #links {
+    margin: 0;
+}
+#middle, #contentWrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+#pageContent { overflow-x: hidden; }
+#bannerSkyscrapercomponent { margin-left: -25px; }
+
+/* PlanetList  */
+#myPlanets, #planetList { width: 147px !important; }
+/* PlanetList  */
+
+/* casino page */
+#premium #inhalt #planet {
+    background-size: 100%;
+    background-position: bottom center;
+    height: 340px;
+}
+#premium #buttonz .footer { width: 100% !important; }
+/* casino page */
+
+/* shop page */
+#shop #contentWrapper #planet {
+    background-size: 100% !important;
+}
+#shop #buttonz { width: 100% !important; }
+#shop #buttonz,
+#shop #buttonz .content { min-height: 700px !important; }
+#shop .to_shop,
+#shop .to_inventory {
+    transform: scale(1.35);
+    position: relative;
+}
+#shop .to_shop {
+    left: -55px;
+}
+#shop .to_inventory {
+    right: -55px;
+}
+#shop #itemBox {
+    height: 435px !important;
+    transform: scale(1.35);
+    top: 87px;
+}
+/* shop page */
+
+#middle .maincontent,
+#middle .maincontent > #inhalt > #planet,
+#middle .maincontent > #inhalt > #planet #detailWrapper,
+#middle .maincontent > #inhalt > #planet #buffBar,
+#middle .maincontent > #inhalt > #overviewBottom {
+    width: 100%;
+}
+
+#middle .maincontent > #inhalt > #planet {
+    height: 325px;
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+/* Overview page */
+#middle #overviewcomponent.maincontent > #inhalt > #planet {
+    height: 410px !important;
+}
+#middle #overviewcomponent.maincontent > #inhalt > #planet #header_text h2 {
+    left: 7% !important;
+    position: relative;
+}
+/* Overview page */
+
+#middle > .productionboxbuilding,
+#middle > .productionboxresearch,
+#middle > .productionboxshipyard {
+    width: 50%;
+}
+
+#premium div#planet, #ticket div#planet {
+    background-size: 100% !important;
+}
+
+#premium #buttonz ul#building li.allOfficers {
+    width: 96% !important;
+}
+
+#contentWrapper #planet,
+#premium #buttonz ul#building,
+#middle > .productionboxbuilding > .content-box-s,
+#middle > .productionboxbuilding > .content-box-s > .header > h3,
+#middle > .productionboxresearch > .content-box-s,
+#middle > .productionboxresearch > .content-box-s > .header > h3,
+#middle > .productionboxshipyard > .content-box-s,
+#middle > .productionboxshipyard > .content-box-s > .header > h3 {
+    width: 100%;
+}
+#middle > .productionboxbuilding > .content-box-s > .header,
+#middle > .productionboxbuilding > .content-box-s > .content,
+#middle > .productionboxbuilding > .content-box-s > .footer,
+#middle > .productionboxresearch > .content-box-s > .header,
+#middle > .productionboxresearch > .content-box-s > .content,
+#middle > .productionboxresearch > .content-box-s > .footer,
+#middle > .productionboxshipyard > .content-box-s > .header,
+#middle > .productionboxshipyard > .content-box-s > .content,
+#middle > .productionboxshipyard > .content-box-s > .footer {
+    background-size: 100%;
+}
+#middle > .productionboxbuilding > .content-box-s > .header,
+#middle > .productionboxresearch > .content-box-s > .header,
+#middle > .productionboxshipyard > .content-box-s > .header {
+    height: 66px;
+}
+#middle > .productionboxbuilding > .content-box-s > .footer,
+#middle > .productionboxresearch > .content-box-s > .footer,
+#middle > .productionboxshipyard > .content-box-s > .footer {
+    height: 50px;
+}
+#middle > .productionboxbuilding > .content-box-s > .header > h3,
+#middle > .productionboxresearch > .content-box-s > .header > h3,
+#middle > .productionboxshipyard > .content-box-s > .header > h3 {
+    font-size: 28px;
+    padding-top: 19px;
+}
+#middle > .productionboxbuilding > .content-box-s > .content *,
+#middle > .productionboxresearch > .content-box-s > .content *,
+#middle > .productionboxshipyard > .content-box-s > .content * {
+    font-size: 20px;
+}
+
+#middle > .productionboxbuilding, #middle > .productionboxresearch, #middle > .productionboxshipyard {
+    float: left;
+}
+
+#planetdata * { font-size: 20px; }
+#planetdata {
+    width: 60% !important;
+    height: 200px !important;
+    margin: 55px 2px 0 0 !important;
+}
+#planetdata #planetOptions { bottom: -50px; }
+
+.build-faster {
+    width: calc( 100% - 7px ) !important;
+    display: block;
+    margin: 12px 0 5px 0px !important;
+}
+
+/* default tech styles */
+
+.slide-up,
+.maincontent header,
+#technologydetails_content,
+#technologydetails .content {
+    height: 412px !important;
+}
+#research header,
+#research #technologydetails_content,
+#research #technologydetails .content {
+    height: 345px !important;
+}
+.maincontent header,
+#fleetdispatchcomponent #planet, /* fleet page header */
+#technologydetails_content {
+    width: 100% !important;
+    background-size: 100% !important;
+    background-position: center bottom !important;
+}
+.maincontent header h2 {
+    left: 25% !important;
+    top: 12px !important;
+}
+#shop #header_text h2 {
+    left: 7% !important;
+    position: relative;
+}
+.maincontent header::after,
+.maincontent #technologies,
+#supplies #technologies::after {
+    width: 100% !important;
+}
+.slide-up,
+.slide-up > div,
+#technologydetails {
+    width: 100% !important;
+}
+
+#technologydetails > .sprite {
+    width: 280px !important;
+    height: 280px !important;
+    background-size: 5600px 8600px !important;
+}
+#technologydetails .technology_tree { top: unset !important; bottom: 0; }
+#technologydetails .content { left: 290px !important; }
+#technologydetails > .description { font-size: 11px !important; top: 290px !important; bottom: 0; width: 80%; }
+#research #technologydetails > .description { font-size: 11px !important; top: unset !important; bottom: -35px; width: 80%; }
+#research #technologydetails_content {
+    height: 340px;
+    background-size: 100% !important;
+    background-position: top left !important;
+}
+#research #technologydetails > .sprite {
+    width: 280px !important;
+    height: 280px !important;
+    background-size: 5600px 8600px !important;
+}
+
+.queuePic {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: auto 80 / 80;
+}
+.abortNow {
+    width: 30px !important;
+    height: 30px !important;
+    background: transparent url("https://gf3.geo.gfsrv.net/cdneb/f5f81e8302aaad56c958c033677fb8.png") -158px -30px no-repeat !important;
+    background-size: 500px !important;
+}
+
+
+/* shipyard page */
+#shipyard header,
+#shipyard #technologydetails_content {
+    height: 350px !important;
+}
+#shipyard #technologydetails .content {
+    height: 350px !important;
+}
+#shipyard #technologydetails > .sprite {
+    width: 280px;
+    height: 280px;
+    background-size: 5600px 8500px;
+}
+#shipyard #technologydetails_content {
+    background-position: center top !important;
+}
+#shipyard #technologydetails > .description { font-size: 11px !important; top: unset; bottom: -30px; width: 80%; }
+
+
+/* defense page */
+#defense header,
+#defense #technologydetails_content {
+    height: 350px !important;
+}
+#defense #technologydetails .content {
+    height: 350px !important;
+}
+#defense #technologydetails > .sprite {
+    width: 280px;
+    height: 280px;
+    background-size: 5600px 8500px;
+}
+#defense #technologydetails_content {
+    background-position: center top !important;
+}
+#defense #technologydetails > .description { font-size: 11px !important; top: unset; bottom: -30px; width: 80%; }
+
+
+/* alliance page */
+#alliance .planet-header {
+    width: 100%;
+    height: 338px;
+    background-size: 100% !important;
+}
+#netz #tabs,
+#netz .new_footer,
+#alliancecomponent .alliance_wrapper {
+    background-size: 100% !important;
+}
+#netz #eins, #netz #zwei, #netz #drei, #netz #vier {
+    background-size: 100% !important;
+}
+
+/* fleet page */
+.fleetStatus,
+#buttonz {
+    width: 98% !important;
+    background-size: 99% !important;
+}
+#buttonz .content {
+    background-size: 100% !important;
+}
+#fleet1 #allornone .allornonewrap {
+    width: 97%;
+}
+
+/*fleetdispatch 2*/
+#fleetboxdestination table#mission {
+    width: 97%;
+}
+#fleetboxdestination .header {
+    background-size: 100% !important;
+}
+#buttonz .header,
+#buttonz .footer {
+    width: 100% !important;
+    background-size: 100% !important;
+}
+#fleet2 form[name="sendForm"] {
+    height: 320px !important;
+}
+#fleet2 form[name="sendForm"] #naviActions {
+    top: 0 !important;
+}
+#fleet2 #mission {
+    width: 97% !important;
+    transform: scale(.97);
+    top: -2px;
+}
+#fleet2 #buttonz ul#missions {
+    transform: scale(1.3);
+    left: 105px;
+    position: relative;
+    width: 73% !important;
+    margin-bottom: 20px;
+}
+
+/* galaxy page */
+#mobileDiv table {
+    width: 100%;
+}
+
+/* fleet */
+#speedPercentage {
+    /*margin-left: 128px !important;
+    transform: scale(1.4);*/
+}
+/*#speedPercentage { width: 96% !important; }
+#speedPercentage .bar { width: 100% !important; }
+#speedPercentage .steps > .step { width: 10% !important; }*/
+
+/* close ico styles */
+.close-menu-left,
+.close-menu-right {
+    color: transparent;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    background: transparent url("//gf3.geo.gfsrv.net/cdneb/f5f81e8302aaad56c958c033677fb8.png") -176px -31px no-repeat;
+}
+.close-menu-right {
+    left: -30px;
+}
+
+/* messages page */
+#messages .subtabs {
+    width: 100% !important;
+}
+/*For v2 if Mobile App is not released yet*/
+/*#messages .js_tabs .tabs_btn {
+    transform: scale(1.5);
+    left: 200px;
+    position: relative;
+    top: 25px;
+}
+#messages .js_tabs .ui-tabs-panel {
+    position: relative;
+    top: 43px;
+}
+#messages #buttonz .content {
+    min-height: 255px !important;
+}
+#messages .js_tabs .ajax_load_shadow {
+}*/
