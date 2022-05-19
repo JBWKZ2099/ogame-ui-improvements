@@ -3,7 +3,7 @@
     "short_name": "UI Mobile Improvements",
     "version": "1.0",
     "description": "UI Mobile Improvements is a tool that make some touch events for mobile viewport",
-    "homepage_url": "https://universeview.be",
+    "homepage_url": "https://github.com/JBWKZ2099/ogame-ui-improvements",
     "manifest_version": 2,
     "background": {
         "page": "background.js"
