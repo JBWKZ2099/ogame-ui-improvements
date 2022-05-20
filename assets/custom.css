@@ -670,7 +670,7 @@ table#eventContent .detailsFleet > span { width: 85% !important; }
     width: 30px;
     height: 30px;
     z-index: 2;
-    background: transparent url("//gf3.geo.gfsrv.net/cdneb/f5f81e8302aaad56c958c033677fb8.png") -176px -31px no-repeat;
+    background: transparent url("https://gf3.geo.gfsrv.net/cdneb/f5f81e8302aaad56c958c033677fb8.png") -176px -31px no-repeat;
 }
 .close-menu-right {
     left: -30px;

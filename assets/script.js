@@ -1,5 +1,3 @@
-$("#banner_skyscraper").empty();
-
 var theHref = location.href;
 
     $("body #pageContent").before(`<div class="resources-commander-container"></div>`);
