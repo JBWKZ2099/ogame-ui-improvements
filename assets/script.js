@@ -105,27 +105,31 @@ function handleTouchMove(evt) {
 };
 
 $(document).on("click", ".close-menu-left", function(e) {
-    $("#pageContent #leftMenu").removeClass("swiped");
-    $("#pageContent #left").removeClass("swiped");
+    closeLeftMenu();
     $(document).find(".bg-filter-menu").removeClass("opened");
 });
 
 $(document).on("click", ".close-menu-right", function(e) {
-    $("#pageContent #right").removeClass("swiped");
-    $("#messages #pageContent #planetbarcomponent").removeClass("swiped");
-    $("#premium #pageContent #planetbarcomponent").removeClass("swiped");
-    $("#shop #pageContent #planetbarcomponent").removeClass("swiped");
+    closeRightMenu();
     $(document).find(".bg-filter-menu").removeClass("opened");
 });
 
 $(document).on("click", ".bg-filter-menu", function(e) {
     $(this).removeClass("opened");
 
+    closeLeftMenu();
+    closeRightMenu();
+});
+
+function closeLeftMenu() {
     $("#pageContent #leftMenu").removeClass("swiped");
     $("#pageContent #left").removeClass("swiped");
+}
 
-    $("#pageContent #right").removeClass("swiped");
-    $("#messages #pageContent #planetbarcomponent").removeClass("swiped");
-    $("#premium #pageContent #planetbarcomponent").removeClass("swiped");
-    $("#shop #pageContent #planetbarcomponent").removeClass("swiped");
-});
+function closeRightMenu() {
+    $("#pageContent #right").removeClass("swiped").removeClass("swiped-nogamead");
+    $("#chat #pageContent #planetbarcomponent").removeClass("swiped").removeClass("swiped-nogamead");
+    $("#messages #pageContent #planetbarcomponent").removeClass("swiped").removeClass("swiped-nogamead");
+    $("#premium #pageContent #planetbarcomponent").removeClass("swiped").removeClass("swiped-nogamead");
+    $("#shop #pageContent #planetbarcomponent").removeClass("swiped").removeClass("swiped-nogamead");
+}

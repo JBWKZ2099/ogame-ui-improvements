@@ -324,7 +324,7 @@ table#eventContent .detailsFleet > span { width: 85% !important; }
 #premium #planetbarcomponent.swiped.swiped-nogamead,
 #pageContent #right #planetbarcomponent.swiped.swiped-nogamead,
 #shop #planetbarcomponent.swiped.swiped-nogamead,
-#pageContent #right.swiped {
+#pageContent #right.swiped.swiped-nogamead {
     right: 6px !important;
 }
 /*When game not loads any ad*/
@@ -338,7 +338,10 @@ table#eventContent .detailsFleet > span { width: 85% !important; }
     max-width: 100% !important;
 }
 #pageContent { overflow-x: hidden; }
-#bannerSkyscrapercomponent { margin-left: -25px; }
+#bannerSkyscrapercomponent {
+    /*margin-left: -25px;*/
+    margin-left: 152px !important;
+}
 
 /* PlanetList  */
 #myPlanets, #planetList { width: 147px !important; }
